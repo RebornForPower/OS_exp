@@ -1,0 +1,76 @@
+/*请输入访问序列：default(1,2,3,1,4,5,1,2,1,4)
+Pagequeue:   visit1
+ 1
+
+
+Pagequeue:   visit2
+ 1
+ 2
+
+
+Pagequeue:   visit3
+ 1
+ 2
+ 3
+
+
+Pagequeue:   visit1
+ 1
+ 2
+ 3
+
+
+Pagequeue:   visit4
+ 1
+ 2
+ 3
+ 4
+
+
+Pagequeue:   visit5
+ 1
+ 5
+ 3
+ 4
+
+
+Pagequeue:   visit1
+ 1
+ 5
+ 3
+ 4
+
+
+Pagequeue:   visit2
+ 1
+ 5
+ 2
+ 4
+
+
+Pagequeue:   visit1
+ 1
+ 5
+ 2
+ 4
+
+
+Pagequeue:   visit4
+ 1
+ 5
+ 2
+ 4
+
+*/ 
+int LRU_counter_Pageseq[48]={ 1 , 0 , 0 , 0 ,
+ 1 , 2 , 0 , 0 ,
+ 1 , 2 , 3 , 0 ,
+ 1 , 2 , 3 , 0 ,
+ 1 , 2 , 3 , 4 ,
+ 1 , 5 , 3 , 4 ,
+ 1 , 5 , 3 , 4 ,
+ 1 , 5 , 2 , 4 ,
+ 1 , 5 , 2 , 4 ,
+ 1 , 5 , 2 , 4 
+};
+int visit[10]={1,2,3,1,4,5,1,2,1,4};

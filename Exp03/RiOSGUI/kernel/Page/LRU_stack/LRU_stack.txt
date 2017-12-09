@@ -1,0 +1,32 @@
+/*
+Pagequeue:   visit1
+ Page:1 [ ] 
+Pagequeue:   visit2
+ Page:1 [ ]  Page:2 [ ] 
+Pagequeue:   visit3
+ Page:1 [ ]  Page:2 [ ]  Page:3 [ ] 
+Pagequeue:   visit1
+ Page:2 [ ]  Page:3 [ ]  Page:1 [ ] 
+Pagequeue:   visit4
+ Page:2 [ ]  Page:3 [ ]  Page:1 [ ]  Page:4 [ ] 
+Pagequeue:   visit5
+ Page:3 [ ]  Page:1 [ ]  Page:4 [ ]  Page:5 [ ] 
+Pagequeue:   visit1
+ Page:3 [ ]  Page:4 [ ]  Page:5 [ ]  Page:1 [ ] 
+Pagequeue:   visit2
+ Page:4 [ ]  Page:5 [ ]  Page:1 [ ]  Page:2 [ ] 
+Pagequeue:   visit1
+ Page:4 [ ]  Page:5 [ ]  Page:2 [ ]  Page:1 [ ] 
+Pagequeue:   visit4
+ Page:5 [ ]  Page:2 [ ]  Page:1 [ ]  Page:4 [ ] */ 
+int LRUstackPageseq[48]={ 1 , 0 , 0 , 0 ,
+ 0 , 1 , 2 , 0 ,
+ 2 , 3 , 0 , 1 ,
+ 1 , 0 , 2 , 3 ,
+ 4 , 2 , 3 , 1 ,
+ 5 , 3 , 1 , 4 ,
+ 1 , 3 , 4 , 5 ,
+ 2 , 4 , 5 , 1 ,
+ 1 , 4 , 5 , 2 ,
+ 4 , 5 , 2 , 1 
+};

@@ -1,0 +1,39 @@
+/*
+
+Page_roundqueue:   visit1
+ Page:1 [1]  Page:  [ ]  Page:  [ ]  Page:  [ ] 
+
+Page_roundqueue:   visit2
+ Page:1 [1]  Page:2 [1]  Page:  [ ]  Page:  [ ] 
+
+Page_roundqueue:   visit3
+ Page:1 [1]  Page:2 [1]  Page:3 [1]  Page:  [ ] 
+Page_roundqueue:   visit1
+ Page:1 [1]  Page:2 [1]  Page:3 [1]  Page:  [ ] 
+
+Page_roundqueue:   visit4
+ Page:1 [1]  Page:2 [1]  Page:3 [1]  Page:4 [1] 
+
+Page_roundqueue:   visit5
+ Page:5 [1]  Page:2 [0]  Page:3 [0]  Page:4 [0] 
+
+Page_roundqueue:   visit1
+ Page:5 [1]  Page:1 [1]  Page:3 [0]  Page:4 [0] 
+
+Page_roundqueue:   visit2
+ Page:5 [1]  Page:1 [1]  Page:2 [1]  Page:4 [0] 
+Page_roundqueue:   visit1
+ Page:5 [1]  Page:1 [1]  Page:2 [1]  Page:4 [0] 
+Page_roundqueue:   visit4
+ Page:5 [1]  Page:1 [1]  Page:2 [1]  Page:4 [1] */ 
+int Clock_Pageseq[48]={ 1 , 0 , 0 , 0 ,
+ 1 , 2 , 0 , 0 ,
+ 1 , 2 , 3 , 0 ,
+ 1 , 2 , 3 , 0 ,
+ 1 , 2 , 3 , 4 ,
+ 5 , 2 , 3 , 4 ,
+ 5 , 1 , 3 , 4 ,
+ 5 , 1 , 2 , 4 ,
+ 5 , 1 , 2 , 4 ,
+ 5 , 1 , 2 , 4 
+};
