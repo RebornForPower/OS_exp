@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/*这里是修改好后的正确写法*/}
+    \PYG{n}{u8} \PYG{n}{two\PYGZus{}sectors}\PYG{p}{[}\PYG{l+m+mi}{1024}\PYG{p}{]}\PYG{o}{=}\PYG{p}{\PYGZob{}}\PYG{l+m+mi}{0}\PYG{p}{\PYGZcb{};}
+    \PYG{n}{IDE\PYGZus{}read\PYGZus{}sector}\PYG{p}{((}\PYG{k+kt}{void} \PYG{o}{*}\PYG{p}{)}\PYG{n}{two\PYGZus{}sectors}\PYG{p}{,} \PYG{n}{DATA\PYGZus{}BLK\PYGZus{}NR\PYGZus{}TO\PYGZus{}SECTOR\PYGZus{}NR}\PYG{p}{(}\PYG{n}{p\PYGZus{}ft}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{f\PYGZus{}inode}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{i\PYGZus{}zone}\PYG{p}{[}\PYG{l+m+mi}{7}\PYG{p}{]));}
+    \PYG{c+cm}{/*之前这里错误地写成了,IDE\PYGZus{}read\PYGZus{}sector((void *)\PYGZam{}two\PYGZus{}sectors,多了个\PYGZam{}造成大错*/}
+    \PYG{k}{union} \PYG{n}{free\PYGZus{}space\PYGZus{}grouping\PYGZus{}head} \PYG{n}{g\PYGZus{}head}\PYG{p}{;}
+    \PYG{n}{u8} \PYG{o}{*} \PYG{n}{p1} \PYG{o}{=} \PYG{p}{(}\PYG{n}{u8} \PYG{o}{*}\PYG{p}{)}\PYG{o}{\PYGZam{}}\PYG{n}{g\PYGZus{}head} \PYG{p}{;}\PYG{n}{IDE\PYGZus{}write\PYGZus{}sector}\PYG{p}{((}\PYG{k+kt}{void} \PYG{o}{*}\PYG{p}{)}\PYG{n}{p1}\PYG{p}{,}\PYG{n}{sector\PYGZus{}num} \PYG{p}{);}
+\end{Verbatim}

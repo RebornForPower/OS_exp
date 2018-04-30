@@ -1,0 +1,109 @@
+\contentsline {chapter}{目录}{I}{chapter*.3}
+\contentsline {chapter}{摘要}{II}{chapter*.3}
+\contentsline {chapter}{关键词}{II}{chapter*.3}
+\contentsline {chapter}{\numberline {第\nobreakspace {}1\nobreakspace {}章\hspace {.3em}}目的及意义}{1}{chapter.1}
+\contentsline {chapter}{\numberline {第\nobreakspace {}2\nobreakspace {}章\hspace {.3em}}课程设计思路及完成任务}{2}{chapter.2}
+\contentsline {section}{\numberline {2.1}思路}{2}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}开发环境}{2}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}主要特点}{2}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}运行流程}{2}{subsection.2.1.3}
+\contentsline {subparagraph}{启动}{2}{subparagraph*.4}
+\contentsline {section}{\numberline {2.2}完成任务}{3}{section.2.2}
+\contentsline {subparagraph}{运行}{3}{subparagraph*.5}
+\contentsline {chapter}{\numberline {第\nobreakspace {}3\nobreakspace {}章\hspace {.3em}}操作系统整体设计}{4}{chapter.3}
+\contentsline {section}{\numberline {3.1}操作系统内核引导}{4}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}BIOS中断服务程序}{5}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}GRUB2}{5}{subsection.3.1.2}
+\contentsline {paragraph}{Grub安装到U盘方法}{5}{paragraph*.6}
+\contentsline {subsection}{\numberline {3.1.3}Multiboot规范}{6}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}链接脚本}{6}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Makefile文件}{7}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}汇编器}{7}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}汇编与C的相互调用}{8}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}从汇编到C语言}{8}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}从C到C++}{8}{subsection.3.2.2}
+\contentsline {paragraph}{*.CC文件}{9}{paragraph*.10}
+\contentsline {paragraph}{汇编语言}{9}{paragraph*.11}
+\contentsline {section}{\numberline {3.3}段描述符}{9}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}全局描述符表GDT (Global Descriptor Table)}{10}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}局部描述符表LDT (Local Descriptor Table)}{12}{subsection.3.3.2}
+\contentsline {section}{\numberline {3.4}中断描述符表IDT (Interrupt Descriptor Table)}{12}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}门描述符}{12}{subsection.3.4.1}
+\contentsline {paragraph}{键盘中断服务程序}{14}{paragraph*.18}
+\contentsline {section}{\numberline {3.5}栈帧}{14}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}内核栈上的陷阱帧(TrapFrame)}{17}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}字符设备驱动}{18}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}屏幕}{18}{subsection.3.6.1}
+\contentsline {paragraph}{光标的设置}{18}{paragraph*.20}
+\contentsline {subsection}{\numberline {3.6.2}键盘}{18}{subsection.3.6.2}
+\contentsline {section}{\numberline {3.7}定时器(8253芯片或其兼容芯片)的设置}{18}{section.3.7}
+\contentsline {section}{\numberline {3.8}块设备驱动}{19}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}IDE(ATA)硬盘}{19}{subsection.3.8.1}
+\contentsline {section}{\numberline {3.9}文件系统设计与实现}{20}{section.3.9}
+\contentsline {chapter}{\numberline {第\nobreakspace {}4\nobreakspace {}章\hspace {.3em}}文件系统部分设计与实现}{21}{chapter.4}
+\contentsline {section}{\numberline {4.1}文件系统总体设计}{21}{section.4.1}
+\contentsline {section}{\numberline {4.2}物理硬盘}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}物理容量设定}{21}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}磁盘格式化}{22}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}目录项的确定}{22}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}硬盘驱动}{22}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}选择IDE(ATA)硬盘}{23}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}硬盘读写}{23}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}建立硬盘分区表}{23}{section.4.4}
+\contentsline {section}{\numberline {4.5}基于位示图的inode分配与回收}{23}{section.4.5}
+\contentsline {section}{\numberline {4.6}建立根目录}{24}{section.4.6}
+\contentsline {section}{\numberline {4.7}基于成组链接法的磁盘空闲块管理}{24}{section.4.7}
+\contentsline {section}{\numberline {4.8}超级块设计}{25}{section.4.8}
+\contentsline {subsection}{\numberline {4.8.1}硬盘超级块}{26}{subsection.4.8.1}
+\contentsline {section}{\numberline {4.9}inode设计}{26}{section.4.9}
+\contentsline {subsection}{\numberline {4.9.1}内存中inode结构(m\_inode)}{26}{subsection.4.9.1}
+\contentsline {subsection}{\numberline {4.9.2}iget和iput}{27}{subsection.4.9.2}
+\contentsline {section}{\numberline {4.10}目录管理}{27}{section.4.10}
+\contentsline {subsection}{\numberline {4.10.1}列出目录(ls)}{27}{subsection.4.10.1}
+\contentsline {subsection}{\numberline {4.10.2}创建和删除目录(mkdir、rmdir)}{27}{subsection.4.10.2}
+\contentsline {subsection}{\numberline {4.10.3}hexdump}{28}{subsection.4.10.3}
+\contentsline {subsection}{\numberline {4.10.4}切换目录(cd)}{29}{subsection.4.10.4}
+\contentsline {paragraph}{查看当前目录(pwd)}{29}{paragraph*.25}
+\contentsline {section}{\numberline {4.11}文件管理}{29}{section.4.11}
+\contentsline {subsection}{\numberline {4.11.1}文件的打开和关闭}{30}{subsection.4.11.1}
+\contentsline {paragraph}{文件结构}{30}{paragraph*.26}
+\contentsline {paragraph}{目录项结构}{30}{paragraph*.27}
+\contentsline {subsection}{\numberline {4.11.2}open}{30}{subsection.4.11.2}
+\contentsline {subsection}{\numberline {4.11.3}多级索引}{32}{subsection.4.11.3}
+\contentsline {subsection}{\numberline {4.11.4}读写文件与删除文件}{32}{subsection.4.11.4}
+\contentsline {subsection}{\numberline {4.11.5}查看文件内容(cat)}{32}{subsection.4.11.5}
+\contentsline {subsection}{\numberline {4.11.6}查看硬盘1结构组成}{34}{subsection.4.11.6}
+\contentsline {chapter}{\numberline {第\nobreakspace {}5\nobreakspace {}章\hspace {.3em}}软件系统设计}{35}{chapter.5}
+\contentsline {section}{\numberline {5.1}系统类图}{35}{section.5.1}
+\contentsline {section}{\numberline {5.2}顺序图}{35}{section.5.2}
+\contentsline {section}{\numberline {5.3}组成}{35}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}整体组成}{35}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}文件系统组成}{40}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}依赖关系图}{40}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}file.cc的依赖关系图}{40}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}fs.cc的依赖关系图}{40}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}整体内部依赖关系图}{40}{subsection.5.4.3}
+\contentsline {chapter}{\numberline {第\nobreakspace {}6\nobreakspace {}章\hspace {.3em}}关键操作（方法）函数的实现}{44}{chapter.6}
+\contentsline {section}{\numberline {6.1}GDT与IDT表项的设置}{44}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}GDT}{44}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}IDT}{45}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}成组链接}{45}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}空闲磁盘块的成组链接分配与回收方法}{47}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}初始化}{48}{subsection.6.2.2}
+\contentsline {section}{\numberline {6.3}目录项的确定}{49}{section.6.3}
+\contentsline {section}{\numberline {6.4}多级索引}{49}{section.6.4}
+\contentsline {paragraph}{直接寻址}{49}{paragraph*.53}
+\contentsline {paragraph}{一次寻址}{49}{paragraph*.54}
+\contentsline {paragraph}{两次寻址}{50}{paragraph*.55}
+\contentsline {paragraph}{三次寻址}{50}{paragraph*.56}
+\contentsline {subsection}{\numberline {6.4.1}删除文件}{50}{subsection.6.4.1}
+\contentsline {chapter}{\numberline {第\nobreakspace {}7\nobreakspace {}章\hspace {.3em}}运行与测试}{56}{chapter.7}
+\contentsline {section}{\numberline {7.1}物理裸机}{56}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}GRUB}{56}{subsection.7.1.1}
+\contentsline {section}{\numberline {7.2}利用QEMU模拟器测试}{58}{section.7.2}
+\contentsline {chapter}{\numberline {第\nobreakspace {}8\nobreakspace {}章\hspace {.3em}}总结与展望}{65}{chapter.8}
+\contentsline {section}{\numberline {8.1}致谢}{65}{section.8.1}
+\contentsline {section}{\numberline {8.2}总结}{65}{section.8.2}
+\contentsline {subsection}{\numberline {8.2.1}存在问题}{66}{subsection.8.2.1}
+\contentsline {subsection}{\numberline {8.2.2}展望}{66}{subsection.8.2.2}
+\contentsline {chapter}{参考文献}{67}{subsection.8.2.2}

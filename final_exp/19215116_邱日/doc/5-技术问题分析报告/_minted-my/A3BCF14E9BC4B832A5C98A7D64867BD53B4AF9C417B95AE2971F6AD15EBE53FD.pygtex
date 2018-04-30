@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/*更正时,在close新添加的语句*/}
+    \PYG{k}{for}\PYG{p}{(}\PYG{n}{j}\PYG{o}{=}\PYG{l+m+mi}{0}\PYG{p}{;}\PYG{n}{j}\PYG{o}{\PYGZlt{}}\PYG{n}{MAX\PYGZus{}ACTIVE\PYGZus{}INODE}\PYG{p}{;}\PYG{n}{j}\PYG{o}{++}\PYG{p}{)}
+    		\PYG{k}{if}\PYG{p}{(}\PYG{n}{active\PYGZus{}inode\PYGZus{}table}\PYG{p}{.}\PYG{n}{inode\PYGZus{}table}\PYG{p}{[}\PYG{n}{j}\PYG{p}{].}\PYG{n}{i\PYGZus{}ino}\PYG{o}{==}\PYG{n}{filp}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{f\PYGZus{}inode}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{i\PYGZus{}ino}\PYG{p}{)}
+    			\PYG{k}{break}\PYG{p}{;}
+    	\PYG{n}{memset}\PYG{p}{(}\PYG{o}{\PYGZam{}}\PYG{n}{active\PYGZus{}inode\PYGZus{}table}\PYG{p}{.}\PYG{n}{inode\PYGZus{}table}\PYG{p}{[}\PYG{n}{j}\PYG{p}{],}\PYG{l+m+mh}{0x00}\PYG{p}{,}\PYG{k}{sizeof}\PYG{p}{(}\PYG{n}{m\PYGZus{}inode}\PYG{p}{));}
+\end{Verbatim}

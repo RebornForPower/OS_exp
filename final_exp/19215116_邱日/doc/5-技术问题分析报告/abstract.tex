@@ -1,0 +1,42 @@
+\begin{center}
+	\zihao{3} \heiti	基于x86架构的操作系统之文件系统设计与实现	\end{center}
+\begin{center}
+	\zihao{-4} \fangsong	计算机科学与技术专业学生 \quad 邱日\\	指导教师 \quad 姜海燕	\end{center}
+
+\zihao{5}
+\addcontentsline{toc}{chapter}{摘要}
+\noindent{\heiti 摘要：}{\songti 
+此次课程设计的目的在于通过在x86架构的计算机上构建简易而真实的操作系统内核,重点实现文件系统部分，来加深
+对操作系统文件系统管理原理的认识，乃至对操作系统整体的理解．
+
+在实现上，首先利用grub加载我的内核镜像，然后设置函数栈大小，段的管理上设置好gdt表，初始化idt表，采用连续内存分配．
+整个内核具体涉及到处理器管理，中断和异常的处理，系统调用的实现；涉及存储管理，基于连续空间分配和回收存储空间；
+涉及设备管理，编写了键盘驱动、字符显示设备的驱动、ATA硬盘驱动，内核能够操纵屏幕键盘和读写硬盘；在文件系统的实现上，
+对inode索引节点采用基于位图的空间分配回收，对数据区采用基于成组链接的磁盘空间分配与回收，采用多级目录，三级索引．
+
+通过测试用例的验证，本系统在文件系统方面实现了预期功能，＂学中干，干中学＂，理论实践相结合，自己也提高了操作系统方面
+综合能力．
+} 
+
+\addcontentsline{toc}{chapter}{关键词} 
+\noindent{\heiti 关键词：}{\songti Linux; 文件系统; inode; 超级块;成组链接 } %要具体•避免罕见缩写词和一般性词汇
+
+\vspace{135pt}
+
+% \begin{center}
+% 	\zihao{3} Design and implement of a toy-like operating system--"RiOS" \end{center}
+% \begin{center}
+% 	\zihao{-4} Student majoring in  computer science and technology \quad Ri Qiu\\Tutor\quad Haiyan Jiang\end{center}
+
+% \zihao{5}
+% \addcontentsline{toc}{chapter}{Abstract}
+% {\renewcommand\baselinestretch{1}\selectfont
+% \noindent\textbf{Abstract: }我是摘要
+% 	\par}
+
+% \vspace{-0.2\baselineskip}
+% \addcontentsline{toc}{chapter}{Key words}
+% \noindent\textbf{Key words: } 三; 到; 五; 个; 关键词
+
+% \vspace{15pt}
+\clearpage

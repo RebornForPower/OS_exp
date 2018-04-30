@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{current}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{filp}\PYG{p}{[}\PYG{n}{fd}\PYG{p}{]}\PYG{o}{\PYGZhy{}\PYGZgt{}}\PYG{n}{f\PYGZus{}inode} \PYG{o}{=} \PYG{o}{\PYGZam{}}\PYG{n}{active\PYGZus{}inode\PYGZus{}table}\PYG{p}{.}\PYG{n}{inode\PYGZus{}table}\PYG{p}{[}\PYG{n}{active\PYGZus{}inode\PYGZus{}table\PYGZus{}nr}\PYG{p}{];}
+\end{Verbatim}

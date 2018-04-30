@@ -1,0 +1,4 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{outb\PYGZus{}wait}\PYG{p}{(}\PYG{l+m+mh}{0x20} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mh}{0x3}\PYG{p}{);} \PYG{c+c1}{// Auto EOI in 8086/88 mode}
+\PYG{n}{outb\PYGZus{}wait}\PYG{p}{(}\PYG{l+m+mh}{0xa0} \PYG{o}{+} \PYG{l+m+mi}{1}\PYG{p}{,} \PYG{l+m+mh}{0x3}\PYG{p}{);} \PYG{c+c1}{// Auto EOI in 8086/88 mode}
+\end{Verbatim}

@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+    \PYG{c+cm}{/*this is hello.h*/}
+    \PYG{c+cp}{\PYGZsh{}ifdef \PYGZus{}\PYGZus{}cplusplus}
+    \PYG{k}{extern} \PYG{l+s}{\PYGZdq{}C\PYGZdq{}} \PYG{p}{\PYGZob{}}
+    \PYG{c+cp}{\PYGZsh{}endif }\PYG{c+cm}{/* \PYGZus{}\PYGZus{}cplusplus */}
+    \PYG{k+kt}{void} \PYG{n}{hello\PYGZus{}cplusplus}\PYG{p}{();}
+    \PYG{c+cp}{\PYGZsh{}ifdef \PYGZus{}\PYGZus{}cplusplus}
+    \PYG{p}{\PYGZcb{}}
+    \PYG{c+cp}{\PYGZsh{}endif }\PYG{c+cm}{/* \PYGZus{}\PYGZus{}cplusplus */}
+\end{Verbatim}

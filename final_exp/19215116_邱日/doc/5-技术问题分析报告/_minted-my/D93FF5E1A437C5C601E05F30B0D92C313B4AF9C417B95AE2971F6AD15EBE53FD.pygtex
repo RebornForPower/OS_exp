@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{n}{outb}\PYG{p}{(}\PYG{n}{PIC0\PYGZus{}OCW2}\PYG{p}{,}\PYG{l+m+mh}{0x60}\PYG{p}{)}
+\end{Verbatim}
